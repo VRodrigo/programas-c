@@ -5,12 +5,12 @@ int main(){
     FILE *pf;
 
     /* creo archivo indicado*/
-    pf = fopen ("hello.txt", "w");
+    pf = fopen ("dragon.txt", "w");
 
     /*escribe en el archivo creado*/
     fprintf(pf, "hello world");
 
-    fclose(pf);
+    fclose(pf)
 
     return EXIT_SUCCESS;
 
