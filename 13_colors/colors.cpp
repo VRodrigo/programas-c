@@ -8,15 +8,15 @@
 
 int main(){
 
-    int rojo,
-        azul;
+    int rojo = 0,
+        azul = 0;
 
     //Preguntamos sio el color tiene rojo
-    printf("¿Tiene el rojo su color?(si=1, no=0):");
+    printf("¿Tiene el rojo su color?(s/n):");
     //El usuario responde con si o no
     scanf(" %i", &rojo);
     //Preguntamos si el color tiene azul
-    printf("¿Tiene el azul su color?(si=1, no=0):");
+    printf("¿Tiene el azul su color?(s/n):");
     //El usuario responde con si o no
     scanf(" %i", &azul);
 
@@ -31,7 +31,7 @@ int main(){
         if(azul)
             printf("azul");
 
-        else 
+        else
             printf("negro");
 
     printf("\n");
