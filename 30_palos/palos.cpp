@@ -15,7 +15,6 @@ bool push(struct Pila* pila, int numero){
                 (pila->primera_posicion_libre + 1) * sizeof(int)
                 );
         pila->n = pila->primera_posicion_libre;
-        printf("Nuevo tamaño pila = %i\n", pila->n);
     }
     pila->data[pila->primera_posicion_libre++] = numero;
     return true;
@@ -44,7 +43,7 @@ int main(int argc, const char **argv){
     for(int i=0; i<3; i++)
         iniciar(&palo[i]);
 
-    printf("Elige una pila(1-2-3): ");
+    printf("Elige un palo(1-2-3): ");
     scanf("%c", &e);
 
     switch(e){
@@ -77,5 +76,6 @@ int main(int argc, const char **argv){
            printf("\n");
            break;
     }
+    free(pila);
     return EXIT_SUCCESS;
 }
